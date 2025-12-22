@@ -1,14 +1,16 @@
 # Instructions
-Perform the following commands system-wide on a fresh OS:
+Perform the following commands system-wide on a new installation of Raspberry Pi OS Lite 64-bit:
 ```
 $ sudo apt update -y
 $ sudo apt upgrade -y
 
 $ sudo raspi-config nonint do_i2c 0
+$ sudo apt install i2c-tools
 $ sudo apt install swig python3-dev build-essential
 $ sudo apt install liblgpio-dev
 ```
 Once finished, restart your device.
+
 Perform the following commands to create a project folder and install the necessary packages inside of a Python Virtual Environment:
 ```
 $ mkdir project
